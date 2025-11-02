@@ -1,202 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Dandu Suresh — Portfolio</title>
-    <link
-      rel="icon"
-      href="https://cdn-icons-png.flaticon.com/128/265/265674.png"
-    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dandu Suresh | Full-Stack Developer</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <div class="brand">
-          <h1>Dandu Suresh</h1>
-        </div>
-
-        <nav class="nav">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
+    <script src="script.js"></script>
+    <header>
+      <nav>
+        <a href="#home" class="brand-name">Dandu Suresh</a>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn">Let's Connect</a>
+      </nav>
     </header>
 
     <main>
       <section id="home" class="hero">
-        <div class="container hero-grid">
-          <div class="hero-text">
-            <h2>Hi, I'm <span class="accent">Dandu Suresh</span></h2>
-            <p class="role">BCA Graduate &amp; Aspiring Software Developer</p>
-            <p class="lead">
-              Passionate about creating innovative solutions with Java, Python,
-              and web technologies. Seeking opportunities to grow in the IT
-              industry and contribute to meaningful projects.
-            </p>
-            <div class="cta">
-              <a href="#projects" class="btn ghost">View My Work</a>
-              <a href="#contact" class="btn ghost">Get In Touch</a>
-            </div>
-            <div class="cta">
-              <a href="#" aria-label="linkedin" class="btn ghost">LinkedIn</a>
-              <a href="#" aria-label="github" class="btn ghost">GitHub</a>
+        <div class="hero-text">
+          <h1>Full-Stack Developer</h1>
+          <p>
+            Aspiring Software Developer with a solid foundation in Java and
+            building full-stack web applications to deliver innovative
+            solutions.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn">Let's Connect</a>
+            <a
+              href="assets/KSanthoshResume.pdf"
+              target="_blank"
+              class="btn btn-secondary"
+              >View Resume</a
+            >
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="raj.png" alt="Kommireddy Santhosh Profile Picture" />
+        </div>
+      </section>
+
+      <section id="skills" class="skills-section">
+        <h2>Technical Expertise</h2>
+        <p class="section-subtitle">Technologies and tools I work with</p>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <img
+              src="https://i.pinimg.com/1200x/6c/5b/0c/6c5b0c28c39753acf162afe17aef6555.jpg"
+              alt="Frontend Development"
+            />
+            <div class="skill-card-content">
+              <h3>Frontend Development</h3>
+              <p>Building responsive and intuitive user interfaces.</p>
+              <div class="tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+              </div>
             </div>
           </div>
-
-          <div class="profile-card">
-            <!-- Replace src with your real profile image -->
-            <img src="raj.png" alt="Dandu Suresh" class="profile-img" />
-            <h3>Dandu Suresh</h3>
-            <p class="small">Software Developer — Kadapa, Andhra Pradesh</p>
+          <div class="skill-card">
+            <img
+              src="https://i.pinimg.com/1200x/d9/82/4f/d9824ff2b80bbdc298db52a298208a7e.jpg"
+              alt="Backend Development"
+            />
+            <div class="skill-card-content">
+              <h3>Backend Development</h3>
+              <p>Developing robust server-side logic and APIs.</p>
+              <div class="tags">
+                <span>Java</span>
+                <span>JDBC</span>
+                <span>JEE</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <img
+              src="https://i.pinimg.com/1200x/3c/55/aa/3c55aac6d5c50d35e3f0191776756910.jpg"
+              alt="Tools & Databases"
+            />
+            <div class="skill-card-content">
+              <h3>Tools & Databases</h3>
+              <p>Managing data and utilizing developer tools.</p>
+              <div class="tags">
+                <span>MySQL</span>
+                <span>Git & GitHub</span>
+                <span>Eclipse</span>
+                <span>MySql Workbench</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="about" class="container about">
-        <h2 class="section-title">About Me</h2>
-        <p>
-          I'm a BCA graduate from SV University Tirupati with a strong
-          foundation in programming and database management. My journey in
-          technology has been driven by curiosity and a passion for
-          problem-solving.
+      <section id="projects" class="projects-section">
+        <h2>Featured Projects</h2>
+        <p class="section-subtitle">
+          A showcase of my recent work in web development
         </p>
-
-        <div class="about-grid">
-          <div class="card stat">
-            <h3>7.50</h3>
-            <p>CGPA</p>
+        <div class="projects-grid">
+          <div class="project-card">
+            <img
+              src="assets/project1.png"
+              alt="Smart Attendance System Project"
+            />
+            <div class="project-card-content">
+              <div class="project-header">
+                <h3>Student Management System</h3>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/kommireddya32/SmartAttendenceSystem"
+                    target="_blank"
+                    title="GitHub Repository"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      role="img"
+                      aria-label="GitHub Icon"
+                    >
+                      <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a
+                    href="https://smartattendencesystem-youi.onrender.com/"
+                    target="_blank"
+                    title="Live Demo"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      role="img"
+                      aria-label="External Link Icon"
+                    >
+                      <path
+                        d="M10 6V8H5V19H16V14H18V19C18 20.1 17.1 21 16 21H5C3.9 21 3 20.1 3 19V8C3 6.9 3.9 6 5 6H10M18 3V11L15.5 8.5L11.7 12.3L10.3 10.9L14.1 7.1L12 5H18Z"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <p>
+                A web application for faculty to track real-time student
+                attendance using dynamic QR codes, with role-based access
+                portals.
+              </p>
+              <div class="tags">
+                <span>Java</span>
+                <span>Springboot</span>
+                <span>Hibernate</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Java Script</span>
+                <span>MySQL</span>
+              </div>
+            </div>
           </div>
-          <div class="card stat">
-            <h3>3+</h3>
-            <p>Projects</p>
-          </div>
-          <div class="card stat">
-            <h3>2025</h3>
-            <p>Graduate</p>
+          <div class="project-card">
+            <img src="assets/project 2.png" alt="CineSphere Project" />
+            <div class="project-card-content">
+              <div class="project-header">
+                <h3>CineSphere</h3>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/kommireddya32/cinesphere"
+                    target="_blank"
+                    title="GitHub Repository"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      role="img"
+                      aria-label="GitHub Icon"
+                    >
+                      <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a
+                    href="https://cinesphere-6btm.onrender.com/"
+                    target="_blank"
+                    title="Live Demo"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      role="img"
+                      aria-label="External Link Icon"
+                    >
+                      <path
+                        d="M10 6V8H5V19H16V14H18V19C18 20.1 17.1 21 16 21H5C3.9 21 3 20.1 3 19V8C3 6.9 3.9 6 5 6H10M18 3V11L15.5 8.5L11.7 12.3L10.3 10.9L14.1 7.1L12 5H18Z"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <p>
+                A dynamic web application for movie discovery, featuring
+                real-time data from the TMDB API, search, and genre filtering.
+              </p>
+              <div class="tags">
+                <span>Java 21</span>
+                <span>Spring Boot</span>
+                <span>REST API</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
           </div>
         </div>
-
-        <h3 class="subheading">Education</h3>
-        <div class="education">
-          <div class="edu-item">
-            <h4>BCA — Computer Applications</h4>
-            <p>SV University Tirupati — Sep 2022 - Apr 2025 | CGPA: 7.50</p>
-          </div>
-          <div class="edu-item">
-            <h4>Intermediate</h4>
-            <p>Apswrs Jr College Pulivendula — June 2019 - Mar 2021 | 64.4%</p>
-          </div>
-        </div>
-
-        <h3 class="subheading">Hobbies &amp; Interests</h3>
-        <ul class="chips">
-          <li>Programming Challenges</li>
-          <li>Photography</li>
-          <li>Tech Podcasts</li>
-          <li>Traveling</li>
-        </ul>
       </section>
 
-      <section id="projects" class="container projects">
-        <h2 class="section-title">My Projects</h2>
-
-        <article class="project">
-          <h4>Student Management System</h4>
-          <p>
-            A desktop app built with Java and JDBC for managing student records
-            with CRUD and MySQL integration.
-          </p>
-          <p class="meta">Java · JDBC · MySQL — Aug 2025 - Sep 2025</p>
-        </article>
-
-        <article class="project">
-          <h4>Online Quiz Application</h4>
-          <p>
-            Interactive quiz system with multiple-choice questions, score
-            tracking, and DB-backed results.
-          </p>
-          <p class="meta">Java · MySQL · Swing — Jun 2025 - Jul 2025</p>
-        </article>
-
-        <article class="project">
-          <h4>Portfolio Website</h4>
-          <p>
-            Responsive personal portfolio showcasing skills, photography work
-            and smooth UI animations.
-          </p>
-          <p class="meta">HTML · CSS · JavaScript — Aug 2025</p>
-        </article>
-      </section>
-
-      <section id="skills" class="container skills">
-        <h2 class="section-title">Skills & Technologies</h2>
-
-        <div class="skill-columns">
-          <div>
-            <h4>Programming Languages</h4>
-            <ul>
-              <li>Java</li>
-              <li>Python</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-            </ul>
+      <section id="certifications" class="certifications-section">
+        <h2>Certifications & Achievements</h2>
+        <p class="section-subtitle">
+          Professional certifications and continuous learning
+        </p>
+        <div class="cert-grid">
+          <div class="cert-card">
+            <a href="JavaC.jpg" target="_blank">
+              <img
+                src="JavaC.jpg"
+                alt="Java Full-Stack web development from Tap Academy"
+              />
+            </a>
           </div>
-
-          <div>
-            <h4>Database & Backend</h4>
-            <ul>
-              <li>MySQL</li>
-              <li>JDBC</li>
-            </ul>
-
-            <h4>Tools</h4>
-            <ul>
-              <li>Git · GitHub · Eclipse IDE · Adobe Photoshop</li>
-            </ul>
+          <div class="cert-card">
+            <a href="PowerBi.jpg" target="_blank">
+              <img
+                src="PowerBi.jpg"
+                alt="Programming Using Java Certificate from Infosys"
+              />
+            </a>
           </div>
-
-          <div>
-            <h4>Languages</h4>
-            <ul>
-              <li>English (Intermediate)</li>
-              <li>Telugu (Advanced)</li>
-            </ul>
+          <div class="cert-card">
+            <a href="assets/sql-certificate.png" target="_blank">
+              <img
+                src="assets/sql-certificate.png"
+                alt="Introduction to SQL Certificate from Davidson College"
+              />
+            </a>
+          </div>
+          <div class="cert-card">
+            <a href="assets/python-certificate.png" target="_blank">
+              <img
+                src="assets/python-certificate.png"
+                alt="Python Certificate from IBM"
+              />
+            </a>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="container contact">
-        <h2 class="section-title">Get In Touch</h2>
-        <p>Let's connect and discuss opportunities.</p>
-
-        <div class="contact-grid">
-          <div class="card">
-            <h4>Email</h4>
-            <p><a href="mailto:[email protected]">[email protected]</a></p>
-          </div>
-          <div class="card">
-            <h4>Phone</h4>
-            <p>+91 8328075522</p>
-          </div>
-          <div class="card">
-            <h4>Location</h4>
+      <section id="contact" class="contact-section">
+        <h2>Get In Touch</h2>
+        <p class="section-subtitle">
+          Ready to start your next project? Let's discuss how we can work
+          together.
+        </p>
+        <div class="contact-container">
+          <div class="contact-info">
+            <h3>Let's Connect</h3>
             <p>
-              Surabhi Harijawada, Chakrayapet Mandal, Kadapa District, AP -
-              516259
+              I'm always interested in new opportunities and exciting projects.
+              Whether you have a question or just want to say hi, feel free to
+              reach out!
             </p>
+            <p><strong>Email:</strong> dandusuresh04@gmail.com</p>
+            <p><strong>Phone:</strong> +91 8328075522</p>
+            <p><strong>Location:</strong> Kadapa, India</p>
           </div>
+          <form
+            action="https://formspree.io/f/mblavvra"
+            method="POST"
+            class="contact-form"
+          >
+            <h3>Send Message</h3>
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              rows="5"
+              required
+            ></textarea>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
         </div>
-
-        <footer class="footer">
-          <p>© 2025 Dandu Suresh. All rights reserved.</p>
-        </footer>
       </section>
     </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="social-links">
+          <a href="https://github.com/DanduSuresh" target="_blank">GitHub</a>
+          <a
+            href="https://www.linkedin.com/in/dandu-suresh-6244msauhri/"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </div>
+        <p>© 2025 Dandu Suresh. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
