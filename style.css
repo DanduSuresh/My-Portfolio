@@ -156,8 +156,8 @@ nav ul a:hover {
 }
 
 .hero-text h1 {
-  font-size: 4rem;
-  background: linear-gradient(90deg, #fff, var(--primary-color));
+  font-size: 3rem;
+  background: linear-gradient(90deg, #dae3eb, var(--primary-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 1rem;
